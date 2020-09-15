@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body{
+    
+    font-size: 1.5rem;
+    font-family:'robot',sans-serif;
+}
+
+.container{
+    content: '';
+    background-image: url(../img/pexels-paras-katwal-4218883.jpg);
+    background-size:cover;
+    background-position:fixed;
+    background-repeat:no-repeat;
+    
+}
+.content{
+    position: absolute;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    height: 50vh;
+    color:#fff;
+    z-index:1;
+}
+
+.logo h1{
+    font-family: 'Abril Fatface', sans-serif;
+    font-size:6rem;
+    border:1px solid rgb(252, 64, 64);
+    padding: 2px 2rem;
+    margin-bottom: 2rem;
+}
+.container h1 span{
+   color: rgb(252, 64, 64);
+
+}
+.text{
+    line-height: 1.5;
+    text-align:center;
+    width:50vw;
+    height: auto;
+    
+}
+.logo img{
+   width: 200px;
+   height: auto;
+}
+
+
+   
+
+.navigation{
+    background-color: rgba(0,0,0,0.4);
+    padding-top:6rem;
+    position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height:100vh;
+}
+
+.buttons{
+    display:flex;
+    flex-direction:row;
+}
+
+.buttons a{
+    text-decoration: none;
+    color: #fff;
+    font-weight:bold;
+    padding:1rem 2rem;
+    text-align:center;
+    border-radius: 10px;
+    background:rgba(0,0,0,0.3);
+    margin:2rem;
+
+}
+.buttons a:hover{
+    background: rgb(252, 64, 64);
+    color: #fff;
+    transition: ease-in, 2s;
+}
+.buttons .contact{
+    display: flex;
+    flex-direction:column;
+}
+@media (max-width: 1000px) {
+    .content{
+        padding-top:5rem;
+    }
+
+    .buttons{
+        margin-top:30rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buttons a{
+        margin-top:3px;
+    }
+    .content{
+        height: 60vh;
+        text-align: center;
+    }
+} 
+
+@media (max-width: 560px) { 
+
+    .container{
+        background-size:cover;
+        background-repeat: no-repeat;
+        height:100vh;
+        background-image:url(../img/pexels-markus-spiske-193349.jpg);
+       
+    
+    }
+    .content{
+        height:
+    }
+    .content .text{
+        display: none;
+    }
+    .buttons{
+
+        margin-top:15rem;
+        display:flex;
+        flex-direction:column;
+    }
+
+}
